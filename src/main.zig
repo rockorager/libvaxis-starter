@@ -70,7 +70,6 @@ const MyApp = struct {
 
         // Start the event loop. Events will now be queued
         try loop.start();
-        defer loop.stop();
 
         try self.vx.enterAltScreen(self.tty.anyWriter());
 
